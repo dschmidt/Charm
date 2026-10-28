@@ -128,7 +128,7 @@ EventIdList Charm::eventIdsSortedBy(EventIdList ids, const Charm::SortOrderList 
 
 EventIdList Charm::eventIdsSortedBy(EventIdList ids, SortOrder order)
 {
-    return eventIdsSortedBy(ids, SortOrderList(1) << order);
+    return eventIdsSortedBy(ids, SortOrderList() << order);
 }
 
 EventIdList Charm::filteredBySubtree(EventIdList ids, TaskId parent, bool exclude)
