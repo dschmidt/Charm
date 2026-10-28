@@ -59,7 +59,7 @@ private Q_SLOTS:
 private:
     QScopedPointer<Ui::MonthlyTimesheetConfigurationDialog> m_ui;
     QList<NamedTimeSpan> m_monthInfo;
-    TaskId m_rootTask;
+    TaskId m_rootTask = {};
 };
 
 #endif
