@@ -51,7 +51,7 @@ public Q_SLOTS:
     void accept() override;
 
 private Q_SLOTS:
-    void slotCheckboxSubtasksOnlyChecked(bool);
+    void slotSubtasksToggled(bool);
     void slotStandardTimeSpansChanged();
     void slotMonthComboItemSelected(int);
     void slotSelectTask();
